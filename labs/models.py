@@ -3,7 +3,7 @@ from django.db import models
 
 
 class Labs(models.Model):
-    lab_name = models.CharField(max_length=30, default=False)
+    lab_name = models.CharField(max_length=30, default='')
 
     def __unicode__(self):
         return '{0}'.format(self.lab_name)
