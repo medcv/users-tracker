@@ -1,0 +1,30 @@
+[
+  {
+    "model": "labs.labs",
+    "pk": 1,
+    "fields": {
+      "lab_name": "Burke"
+    }
+  },
+  {
+    "model": "labs.labs",
+    "pk": 2,
+    "fields": {
+      "lab_name": "Fairfax"
+    }
+  },
+  {
+    "model": "labs.labs",
+    "pk": 3,
+    "fields": {
+      "lab_name": "Austin"
+    }
+  },
+  {
+    "model": "labs.labs",
+    "pk": 4,
+    "fields": {
+      "lab_name": "Houston"
+    }
+  }
+]

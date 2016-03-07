@@ -45,4 +45,4 @@ class LabsTestCase(TestCase):
         client = APIClient()
         requestPost = client.post('/api/v1/labs/', {'lab_name': 'NewPostedLab'}, format='json')
         self.assertEquals(client.get('/api/v1/labs/').content,
-                          '[{"id": 1,"lab_name":"BurkeTest"},{"id":30000,"lab_name":""},{"id":30001,"lab_name":"NewPostedLab"}]')
+                          '[{"id":1,"lab_name":"BurkeTest"},{"id":30000,"lab_name":""},{"id":30001,"lab_name":"NewPostedLab"}]')
