@@ -17,7 +17,6 @@ class JSONResponse(HttpResponse):
         super(JSONResponse, self).__init__(content, **kwargs)
 
 
-@csrf_exempt
 def labs_list(request):
     if request.method == 'GET':
         labs = Labs.objects.all()
@@ -33,7 +32,6 @@ def labs_list(request):
         return JSONResponse(serializer.errors, status=400)
 
 
-@csrf_exempt
 def labs_detail(request, lab_name):
     try:
         lab = Labs.objects.get(lab_name=lab_name)

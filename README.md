@@ -26,3 +26,7 @@
 >>> Labs.objects.create(lab_name="Austin")
 >>> Labs.objects.create(lab_name="Houston")
 ```
+
+## Run test
+
+* `$ python manage.py test`
