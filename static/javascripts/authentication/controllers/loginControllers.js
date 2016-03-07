@@ -20,6 +20,7 @@
             $http.get('api/v1/labs/').then(function (response) {
                 vm.labs = response.data;
                 vm.defaultSelectedLab = vm.labs[0].id;
+                vm.labName = vm.labs[0].lab_name;
             });
         }
     }
