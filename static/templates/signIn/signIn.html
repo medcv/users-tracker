@@ -6,16 +6,16 @@
                 <h3>Tell us why you are here!</h3>
                 <div class="form-group">
                     <div>The following options:</div>
-                    <div><input type="checkbox" ng-model="vm.checkboxModel.browser"> Browsing the web</div>
-                    <div><input type="checkbox" ng-model="vm.checkboxModel.email"> Checking my email</div>
-                    <div><input type="checkbox" ng-model="vm.checkboxModel.resume"> Working on my resume</div>
-                    <div><input type="checkbox" ng-model="vm.checkboxModel.job"> Applying for jobs online</div>
-                    <div><input type="checkbox" ng-model="vm.checkboxModel.game"> Playing games</div>
-                    <div><input type="checkbox" ng-model="vm.checkboxModel.video"> Watching videos</div>
+                        <div><input type="radio" ng-model="vm.radioModel" value="browser"> Browsing the web</div>
+                        <div><input type="radio" ng-model="vm.radioModel" value="email"> Checking my email</div>
+                        <div><input type="radio" ng-model="vm.radioModel" value="resume"> Working on my resume</div>
+                        <div><input type="radio" ng-model="vm.radioModel" value="job"> Applying for jobs online</div>
+                        <div><input type="radio" ng-model="vm.radioModel" value="game"> Playing games</div>
+                        <div><input type="radio" ng-model="vm.radioModel" value="video"> Watching videos</div>
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
                 </div>
             </form>
         </div>

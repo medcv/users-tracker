@@ -9,6 +9,7 @@
     function SignInController(SignIn, Authentication) {
         var vm = this;
         vm.signIn = signIn;
+        vm.radioModel='';
         vm.checkboxModel = {
             'lab_name':Authentication.getLabName(),
             'browser': false,
@@ -19,6 +20,11 @@
             'video':false
         };
         function signIn() {
+            angular.forEach(vm.checkboxModel, function(val, key){
+                if(key === vm.radioModel){
+                    vm.checkboxModel[key] = true;
+                }
+            });
             SignIn.postDataSignIn(vm.checkboxModel);
         }
     }
